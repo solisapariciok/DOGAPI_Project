@@ -4,7 +4,7 @@ const specialBreeds = ["Bulldog", "Pug", "Beagle"];
 // Function to fetch a random dog image and show breed info if available
 function loadRandomDog() {
   fetch("https://api.thedogapi.com/v1/images/search", {
-    headers: { "x-api-key": live_yxSPPmitVewn8XYl6QXEqZlhqk9ETir1aKqLB3XHSqhV351MO5abXogSKsr5WYEn }
+    headers: { "x-api-key": "live_yxSPPmitVewn8XYl6QXEqZlhqk9ETir1aKqLB3XHSqhV351MO5abXogSKsr5WYEn" }
   })
     .then(res => res.json())
     .then(data => {
@@ -27,7 +27,7 @@ function loadRandomDog() {
 // Function to fetch all dog breeds
 function listBreeds() {
   fetch("https://api.thedogapi.com/v1/breeds", {
-    headers: { "x-api-key": live_yxSPPmitVewn8XYl6QXEqZlhqk9ETir1aKqLB3XHSqhV351MO5abXogSKsr5WYEn }
+    headers: { "x-api-key": "live_yxSPPmitVewn8XYl6QXEqZlhqk9ETir1aKqLB3XHSqhV351MO5abXogSKsr5WYEn" }
   })
     .then(res => res.json())
     .then(data => {
